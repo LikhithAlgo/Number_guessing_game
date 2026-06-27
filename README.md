@@ -1,26 +1,32 @@
 # Number Guessing Game
 
-## Description
-
-This is a simple Python Number Guessing Game. The program generates a random number between 1 and 100, and the player has to guess the correct number. After each guess, the program provides a hint indicating whether the guess is too high or too low. The game continues until the correct number is guessed.
+A simple command-line number guessing game built with Python, where the player tries to guess a randomly generated number within a set range.
 
 ## Features
+- Randomly generates a number between 1 and 100
+- Validates input (rejects non-numeric and out-of-range guesses)
+- Gives feedback after each guess ("too low" / "too high")
+- Tracks and displays total number of guesses once the correct number is found
 
-- Random number generation
-- User input validation
-- Range checking
-- High and low hints
-- Guess counter
+## Tech Stack
+- Python (no external libraries required)
+- `random` module for generating the target number
+
+## How to Run
+1. Make sure you have Python installed
+2. Run: `python main.py`
 
 ## How It Works
+- The game picks a secret number between 1 and 100
+- You keep guessing until you find it
+- Each guess is checked:
+  - Must be a valid number
+  - Must be within the 1–100 range
+  - Compared against the secret number for "too low" / "too high" feedback
+- Once guessed correctly, your total number of attempts is shown
 
-1. The program generates a random number between 1 and 100.
-2. The player enters a guess.
-3. The program checks the guess and provides feedback:
-   - Too High
-   - Too Low
-   - Correct
-4. The game ends when the correct number is guessed.
-5. The total number of guesses is displayed.
-
+## Future Improvements
+- Add difficulty levels (different number ranges or limited guess attempts)
+- Add a play-again option without restarting the script
+- Track and display best score (fewest guesses) across multiple rounds
 
